@@ -20,9 +20,10 @@
                 .rtl {font-family: OpenSansHebrewIE !imporant;  }
             </style>
         <![endif]-->
+	
 		<script>
 			window.isMobile = <?=var_export($GLOBALS["detect"]->isMobile(),true)?>;
-		</script>	
+		</script>
 </head>
 	<body>
                 <div id="header">
