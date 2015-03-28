@@ -1,0 +1,6 @@
+[18-Oct-2014 14:34:00 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3
+[25-Oct-2014 01:55:02 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3
+[05-Feb-2015 02:21:42 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3
+[05-Feb-2015 02:21:44 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3
+[05-Feb-2015 02:21:48 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3
+[05-Feb-2015 02:21:49 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home5/pazaztac/public_html/kadmonbrin/wp-content/themes/KadmonBrin/index.php on line 3

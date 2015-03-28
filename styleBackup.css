@@ -1,0 +1,616 @@
+/**
+  Theme Name: Kadmon Brin
+  Theme URI: 
+  Version: 1.0
+  Author: Paz Eltahan
+  Author URI: 
+  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
+  Licence: 
+  
+  Description: 
+*/
+
+
+
+/**
+  theme requirements as per 
+  http://codex.wordpress.org/CSS
+*/
+
+@font-face {
+    font-family: 'FuturaCondensed';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/futura-condensed-normal.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FuturaCondensed';
+    font-weight: 200;
+    font-style: normal;
+    src: url('fonts/futura-condensedlight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NeuronExtraLightRegular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/corradinefonts-neuronextralight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NeuronExtraBold';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/NeuronExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Neuron';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/Neuron.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Neuron';
+    font-weight: 600;
+    font-style: normal;
+    src: url('fonts/NeuronBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSansHebrew';
+    font-weight: 400;
+    font-style: normal;
+    src: url('fonts/opensanshebrew-regular-webfont.woff') format('woff');
+}
+
+/*
+@font-face {
+    font-family: 'FuturaCondensedNormalRegular';
+    src: url('fonts/futura-condensed-normal.eot');
+    src: url('fonts/futura-condensed-normal.eot') format('embedded-opentype'),
+         url('fonts/futura-condensed-normal.woff2') format('woff2'),
+         url('fonts/futura-condensed-normal.woff') format('woff'),
+         url('fonts/futura-condensed-normal.ttf') format('truetype'),
+         url('fonts/futura-condensed-normal.svg#FuturaCondensedNormalRegular') format('svg');
+}
+*/
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'OpenSans', sans-serif;
+    background-color: #585859;
+    background-image: url('images/inner_bg3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+div#content {
+    margin: auto;
+    width: 1200px;
+    box-sizing: border-box;
+    color: #585859;
+    font-family: NeuronExtraLightRegular,'Open Sans', Tahoma;
+    font-weight: 500;
+}
+
+#header_content {
+    margin: auto;
+    width: 1200px;
+}
+
+#container {
+    float: left;
+    width: 100%;
+}
+
+.mediumpadding {
+    padding-top: 55px;
+}
+
+.bigpadding {
+    padding-top: 90px;
+}
+
+#footer_container {
+    width: 1200px;
+    margin: auto;
+}
+
+div#inner_left {
+    float: left;
+    width: 270px;
+}
+
+div#inner_right {
+    width: 930px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 31px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    border:none;
+}
+
+#header {
+    background-color: #585859;
+    
+    width: 100%;
+    float: left;
+    border-bottom: solid 7px #0db6b1;
+    box-sizing: border-box;
+}
+
+.bg {
+  width:100%;  
+  position: absolute;
+  z-index: -1;
+  overflow:hidden;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #585859;
+  background-size: cover !important;
+  background-size: 100% !important\9;
+}
+
+#bg img {
+    display:none;
+}
+
+#navigation {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 240px;
+}
+
+#navigation img {
+    cursor:pointer;
+    width: 17px;
+    margin-right: 2px;
+}
+
+#logo {
+    float: left;
+    padding: 45px 0 25px 0px;
+    width: 295px;
+    position: relative;
+}
+
+#logo img {
+    width:100%;
+}
+
+.ball_pointer:after {
+    background: url('http://kadmonbrin.pazazta.com/wp-content/themes/KadmonBrin/images/nav.png');
+    content: "";
+    display: inline-block;
+    width: 19px;    
+    height: 19px;
+    position: absolute;
+    left: 277px;
+    top: 140px;
+}
+
+#main_menu {
+    float: right;
+    padding: 67px 0 0 0;
+}
+
+#main_menu ul {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+#main_menu li {
+    float: left;
+    padding: 5px 0;
+    border-left: solid 2px #d2d2d2;
+    position: relative;
+}
+
+#main_menu li:first-child {
+    border-left: none;
+}
+
+#main_menu ul a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 23px;
+    font-family: FuturaCondensed;
+    font-weight: 200;
+}
+
+#main_menu ul a:hover {
+    color: #E5E5E5;
+}
+
+.current_page_item:after {
+    background: url('http://kadmonbrin.pazazta.com/wp-content/themes/KadmonBrin/images/nav.png');
+    content: "";
+    display: inline-block;
+    width: 19px;    
+    height: 19px;
+    position: absolute;
+    left: 40%;
+    top: 74px;
+}
+
+/** READ MORE **/
+#readmore_intro img {
+    float: right;
+    width: 184px;
+    border: solid 7px #ffffff;
+}
+
+div#readmore_intro {
+    padding-right: 20px;
+    font-weight: normal;
+    line-height: 34px;
+    text-align: right;
+    float: right;
+    font-family: OpenSansHebrew;
+}
+
+#readmore_intro p {
+    float: right;
+    width: 630px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+div#readmore_stuff {
+    float: left;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 26px;
+    margin-left: 55px;
+}
+
+
+div#readmore_stuff li {
+    line-height:30px;
+}
+
+div#readmore_stuff li a {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+}
+
+/** CONTACT FORMS **/
+div#slick_contact {
+    width: 202px;
+    height: auto;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    /* left: 90px; */
+    overflow: hidden;
+    background-color: #11b0ac;
+    /* padding: 15px; */
+    font-family: 'Neuron', sans-serif;
+}
+form#slick_contact_form {
+    float: left;                   
+    padding: 10px 21px;
+}
+div#slick_contact_title {
+    color: #ffffff;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 9px 8px 0px 8px;
+    text-align: center;
+}
+div#slick_contect_phone {
+    color: #ffffff;  
+    font-size: 37px;  
+    line-height: 32px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+.msg-error {
+    color: rgb(219, 0, 0);
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+div#success_mail {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    display:none;
+}
+#sick_contact_content {
+    float: left;
+}
+
+#slick_contact_form input[type=text],#slick_contact_form textarea {
+    background-color: #11b0ac;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    padding: 7px 5px;
+    width: 100%;
+    font-size: 15px;
+    margin: 3px 0;
+    -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;  width: 100%;
+    resize: none;
+    font-family: NeuronExtraLightRegular;
+}
+
+#slick_contact_form input#submit {
+    background-color: #ffffff;
+    border: none;
+    color: #11b0ac;
+    width: 100%;
+    font-size: 23px;
+    padding: 2px 0;
+    cursor: pointer;
+    font-family: NeuronExtraBold;
+}
+
+#full_contact_form {
+    margin: 40px auto 15px auto;
+    width:420px;
+}
+
+#full_contact_form input[type=text],#full_contact_form textarea {
+    background-color: transparent;
+    border: solid 1px #585859;
+    color: #585859;
+    padding: 12px 5px;
+    width: 100%;
+    font-size: 19px;
+    margin: 3px 0;
+    -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;  width: 100%;
+    resize: none;
+    font-family: Neuron;
+}
+
+#full_contact_form input#submit {
+    background-color: #9d8677;
+    border: none;
+    color: #ffffff;
+    width: 100%;
+    font-size: 19px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/** Testemonials **/
+.testemonial {
+    border: solid 1px;
+    width: 243px;
+    height: 442px;
+    padding: 17px;
+    box-sizing: border-box;
+    line-height: 25px;
+    float: left;
+    margin-right: 42px;
+    position: relative;
+}
+
+div#testemonials {
+    width: 3000px;
+    float: left;
+    margin: auto;
+}
+
+.arrow {
+    float: left;
+    position: relative;
+    top: 190px;
+    cursor: pointer;
+    width: 40px;
+}
+
+
+div#testemonials_wrapper {
+    width: 825px;
+    float: left;
+    overflow: hidden;
+}
+
+div#testemonials_container {
+    float: left;
+}
+
+.readmore {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;   
+}
+
+#readmore_stuff ul {
+    list-style-image: url('http://kadmonbrin.pazazta.com/wp-content/themes/KadmonBrin/images/bullet.png');  
+    padding-left: 23px;
+}
+
+/** GENERAL **/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+.ltr {
+    text-align: left; 
+    direction: ltr;
+    font-size: 14.8px;
+    line-height: 19px;
+}
+
+.rtl {
+    text-align: right; 
+    direction: rtl;
+    font-family: OpenSansHebrew;
+    font-size: 13px;
+}
+
+#inner_right.bigp {
+  width: 860px;
+}
+
+
+.bigp p {
+    font-size: 30px; 
+    text-align: justify;
+    margin-bottom: 2px;
+}
+
+.bigp p:after {
+    width: 100%;
+    display: inline-table;
+    content: "";
+}
+/*
+@media all and (max-width:1400px) {
+    div#testemonials_wrapper {
+      width: 795px;
+    }
+    .testemonial {
+        width: 245px;
+        margin-right: 20px;
+    }
+    #readmore_intro img {
+        width: 160px;
+    }
+    #readmore_intro p {
+        width: 475px;
+        padding-right: 10px;
+        line-height: 22px;
+        font-size: 15px;
+    }  
+}
+
+@media all and (max-width:1280px) {
+   div#testemonials_wrapper {
+        width: 590px;
+    }
+    
+    .testemonial {
+        width: 260px;
+        margin-right: 35px;
+    }  
+    #main_menu {
+      padding-right: 35px;
+    }
+    #main_menu ul {
+        font-size: 19px;
+    }
+    div#content {
+      padding-left: 45px;
+      padding-right: 60px;
+    }
+    #logo {
+      padding-left: 45px;
+    
+      width: 309px;
+}
+    .bigp {
+        font-size: 29px; 
+        text-align: justify;
+    }
+    .current_page_item:after {
+        top: 70px;  
+    }  
+    .ball_pointer:after {
+        left: 335px;
+        top: 123px;
+    }
+    div#readmore_intro {
+        padding-right:0;
+    }
+    div#slick_contact {
+        left: 50px;
+    }
+}
+
+@media all and (max-width:1000px) {
+   div#testemonials_wrapper {
+        width: 510px;
+    }
+    
+    .testemonial {
+        width: 240px;
+        margin-right: 15px;
+    }  
+    #main_menu {
+        padding-right:1%;   
+    }
+    #logo {
+        padding:30px 0 10px 40px;
+    
+        width: 279px;
+}
+    div#slick_contact {
+        left: 45px;
+    }
+    #main_menu ul {
+        font-size: 19px;
+    } 
+    h1 {
+        font-size: 27px;
+    }
+    .bigp {
+        font-size: 27px; 
+        text-align: justify;
+    }    
+    .current_page_item:after {
+        top: 55px;  
+    }    
+    .ball_pointer:after {
+        left: 300px;
+        top: 105px;
+    }    
+}
+
+@media all and (max-width:860px) {
+   div#testemonials_wrapper {
+        width: 510px;
+    }
+    
+    .testemonial {
+        width: 240px;
+        margin-right: 15px;
+    }  
+    #main_menu {
+        padding-right:1%;   
+    }
+    #logo {
+        padding-left:4%;
+    }
+}*/
