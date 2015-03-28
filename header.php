@@ -25,7 +25,7 @@
 		</script>	
 </head>
 	<body>
-	<!-- Hello World -->
+	<!-- Hello World Yes -->
                 <div id="header">
                     <div id="header_content">
                         <?php
