@@ -154,9 +154,27 @@ function init_portfolio()
 	if (!window.isMobile) {
 		load_proj_images($('.active_proj'));
 		update_img_counter();
-		target = -($('#project_thumbs ul').outerHeight()-$('#project_thumbs').height());
-		speed_factor = 5;
-		$('#arrow_down').hover(
+
+        var target = -($('#project_thumbs ul').outerHeight()-$('#project_thumbs').height());
+        var thumb_height = $('#project_thumbs li').height();
+
+        $('#arrow_down').click (
+          function() {
+             if (parseInt($('#project_thumbs ul').css('margin-top')) - $('#project_thumbs li').height() >= target) {
+                 $('#project_thumbs ul').animate({'margin-top': '-='+thumb_height+'px'},300,'linear');
+             }
+          }
+        );
+
+        $('#arrow_up').click (
+          function() {
+             if (parseInt($('#project_thumbs ul').css('margin-top')) + $('#project_thumbs li').height() <= 0) {
+                 $('#project_thumbs ul').animate({'margin-top': '+='+thumb_height+'px'},300,'linear');
+             }
+          }
+        );
+
+/*		$('#arrow_down').hover(
 			function() {
 			  if (parseInt($('#project_thumbs ul').css('margin-top')) >=  target) {
 				  animation_speed = (100-(parseInt($('#project_thumbs ul').css('margin-top'))/target*100))*10*speed_factor;
@@ -177,8 +195,9 @@ function init_portfolio()
 		   function() {
 			$('#project_thumbs ul').stop(true,false);
 		   }
-		);
-		
+		);*/
+
+
 		$('#next_img').click(next_project_img);
 		$('#prev_img').click(prev_project_img);
 		
