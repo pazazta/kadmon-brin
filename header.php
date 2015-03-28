@@ -13,6 +13,7 @@
         <link href="<?=get_template_directory_uri()?>/style.css?v=1.8" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" type="image/x-icon" href="<?=get_template_directory_uri()?>/images/kadmon-favicon.ico" />
         <script type="text/javascript" language="javascript" src="<?=get_template_directory_uri()?>/js/jquery-1.9.1.min.js" ></script> 
+        <script type="text/javascript" language="javascript" src="<?=get_template_directory_uri()?>/js/jquery.mousewheel.min.js" ></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css" />
         <script type="text/javascript" language="javascript" src="<?=get_template_directory_uri()?>/js/elements.js?v=1.5" ></script> 
         <!--[if IE]>
