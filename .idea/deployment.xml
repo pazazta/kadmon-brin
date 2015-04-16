@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Kadmon" uploadOnCheckin="476d4660-d070-461c-8f56-abda099f7dcf">
+    <serverData>
+      <paths name="Kadmon">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wp-content" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="Kadmon" />
+  </component>
+</project>
