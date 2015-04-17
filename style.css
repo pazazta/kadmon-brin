@@ -7,7 +7,7 @@
   Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
   Licence: 
   
-  Description: yepo
+  Description: yepona
 */
 
 
@@ -35,8 +35,8 @@
     font-family: 'NeuronExtraLightRegular';
     font-weight: 400;
     font-style: normal;
-    src: 
-         url('fonts/corradinefonts-neuronextralight.woff') format('woff');
+    src:
+    url('fonts/corradinefonts-neuronextralight.woff') format('woff');
 }
 
 @font-face {
@@ -157,34 +157,34 @@ img {
 
 #header {
     background-color: #585859;
-    
+
     width: 100%;
     float: left;
     border-bottom: solid 5px #0db6b1;
     box-sizing: border-box;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.5);   
-    -moz-box-shadow:    0px 1px 10px 0px rgba(50, 50, 50, 0.5);  
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 1px 10px 0px rgba(50, 50, 50, 0.5);
     box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.5);
 }
 
 .bg, .bg_proj {
-  width:100%;  
-  position: absolute;
-  z-index: -1;
-  overflow:hidden;
-  height:100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #585859;
-  background-size: cover !important;
-  background-size: 100% !important\9;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    overflow:hidden;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #585859;
+    background-size: cover !important;
+    background-size: 100% !important\9;
 }
 
 .bg_proj {
-	display: none;
-	
+    display: none;
+
 }
-	
+
 #bg img {
     display:none;
 }
@@ -216,7 +216,7 @@ img {
     background: url('http://www.kadmon-brin.co.il/wp-content/themes/KadmonBrin/images/nav.png');
     content: "";
     display: inline-block;
-    width: 19px;    
+    width: 19px;
     height: 19px;
     position: absolute;
     left: 277px;
@@ -243,7 +243,7 @@ img {
     border-left: solid 2px #d2d2d2;
     position: relative;
     -webkit-transition: opacity .3s, color .3s; /* For Safari 3.1 to 6.0 */
-    transition: opacity .3s, color .3s;    
+    transition: opacity .3s, color .3s;
 }
 
 #main_menu li:first-child {
@@ -256,7 +256,7 @@ img {
     color: #ffffff;
     padding: 0px 23px;
     font-family: FuturaCondensed;
-    font-weight: 200;    
+    font-weight: 200;
 }
 
 #main_menu ul a:hover {
@@ -267,7 +267,7 @@ img {
     background: url('http://www.kadmon-brin.co.il/wp-content/themes/KadmonBrin/images/nav.png');
     content: "";
     display: inline-block;
-    width: 19px;    
+    width: 19px;
     height: 19px;
     position: absolute;
     left: 40%;
@@ -280,66 +280,66 @@ img {
 
 
 #main_menu ul li ul {
-  position:absolute;
-  float: none;
-  width: 100%;
-  margin-top: 5px;
+    position:absolute;
+    float: none;
+    width: 100%;
+    margin-top: 5px;
 }
 
 #main_menu ul li ul li {
-  clear: both;
-  padding: 0;
-  border: 0;
-  text-align: center;
-  opacity:0;
-  width: 100%;
+    clear: both;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    opacity:0;
+    width: 100%;
 }
 
 #main_menu ul li:hover > ul li {
-  opacity:1;
+    opacity:1;
 }
 
 #main_menu ul li ul a {
-   color: #08AFAD;
-   padding: 0;
-   font-size: 17px;
+    color: #08AFAD;
+    padding: 0;
+    font-size: 17px;
 }
 
 #main_menu ul li ul a:hover {
-   color: #0FC8C6;
-   padding: 0;
-   font-size: 17px;
+    color: #0FC8C6;
+    padding: 0;
+    font-size: 17px;
 }
 
 
 /** READ MORE **/
 #readmore_intro img {
-    float: right;
+    float: left;
     width: 184px;
     border: solid 7px #ffffff;
 }
 
 div#readmore_intro {
     font-weight: normal;
-    line-height: 34px;
-    text-align: right;
-    float: right;
-    font-family: OpenSansHebrew;
+    line-height: 22px;
+    text-align: left;
+    float: left;
+    /* font-family: inherit; */
 }
 
 #readmore_intro p {
-    float: right;
-    width: 630px;
-    padding-right: 20px;
-    font-size: 18px;
+    float: left;
+    width: 720px;
+    padding: 0 0 9px 20px;
+    font-size: 16px;
 }
 
 div#readmore_stuff {
     float: left;
     text-align: left;
     font-size: 24px;
-    margin-top: 26px;
-    margin-left: 55px;
+    margin-top: 6px;
+    /* margin-left: 55px; */
 }
 
 
@@ -367,7 +367,7 @@ div#slick_contact {
     font-family: 'Neuron', sans-serif;
 }
 form#slick_contact_form {
-    float: left;                   
+    float: left;
     padding: 10px 16px;
 }
 div#slick_contact_title {
@@ -378,8 +378,8 @@ div#slick_contact_title {
     text-align: center;
 }
 div#slick_contect_phone {
-    color: #ffffff;  
-    font-size: 34px;  
+    color: #ffffff;
+    font-size: 34px;
     line-height: 32px;
     margin-bottom: 0px;
     text-align: center;
@@ -457,15 +457,15 @@ div#success_mail {
 }
 
 .contact-title {
-	font-size: 38px;
+    font-size: 38px;
 }
 
 #contact_email {
-	font-size: 24px;
-	font-weight: bold;
-	text-align: center; 
-	letter-spacing: 5px;
-} 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
 
 /** Testemonials **/
 .testemonial {
@@ -507,21 +507,21 @@ div#testemonials_container {
 .readmore {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 #readmore_stuff ul {
-    list-style-image: url('http://www.kadmon-brin.co.il/wp-content/themes/KadmonBrin/images/bullet.png');  
+    list-style-image: url('http://www.kadmon-brin.co.il/wp-content/themes/KadmonBrin/images/bullet.png');
     padding-left: 23px;
 }
 
 .post {
     font-size: 18px !important;
-    line-height: 22px; 
-	text-align: right !important; 
-	direction: rtl !important; 
-	font-weight: normal ; 
-	font-family: OpenSansHebrew;	
+    line-height: 22px;
+    text-align: right !important;
+    direction: rtl !important;
+    font-weight: normal ;
+    font-family: OpenSansHebrew;
 }
 
 .post_date {
@@ -531,21 +531,21 @@ div#testemonials_container {
 /** GENERAL **/
 .aligncenter,
 div.aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .alignleft {
-   float: left;
+    float: left;
 }
 
 .alignright {
-   float: right;
+    float: right;
 }
 
 .ltr {
-    text-align: left; 
+    text-align: left;
     direction: ltr;
     font-size: 12px;
     line-height: 16px;
@@ -553,20 +553,20 @@ div.aligncenter {
 }
 
 .rtl {
-    text-align: right; 
+    text-align: right;
     direction: rtl;
     font-family: OpenSansHebrew;
     font-size: 12px;
 }
 
 #inner_right.bigp {
-  width: 860px;
-  padding-left: 75px;
+    width: 860px;
+    padding-left: 75px;
 }
 
 
 .bigp p {
-    font-size: 30px; 
+    font-size: 30px;
     text-align: justify;
     margin-bottom: 2px;
 }
@@ -610,9 +610,9 @@ div#projects_thumbs_container {
 }
 
 #project_thumbs li {
-  cursor:pointer;
-  float: left;
-  position: relative;
+    cursor:pointer;
+    float: left;
+    position: relative;
 }
 
 #project_thumbs li img {
@@ -623,7 +623,7 @@ div#projects_thumbs_container {
 }
 
 #project_thumbs li:hover {
-  opacity:0.7;
+    opacity:0.7;
 }
 
 img.arrow_thumbs {
@@ -664,7 +664,7 @@ img.arrow_proj {
 }
 
 img.arrow_proj:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 #images_area {
@@ -675,7 +675,7 @@ img.arrow_proj:hover {
 }
 
 span#prev_proj:hover,span#next_proj:hover {
-  color:#000000;
+    color:#000000;
 }
 
 span#prev_proj {
@@ -722,50 +722,50 @@ div#img_counter {
     display:block;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-   .rtl {font-family:OpenSansHebrewIE !important;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .rtl {font-family:OpenSansHebrewIE !important;}
 }
 
 /** TABLET & MOBILE **/
 
 #mini_menu{
-	display: none;
-	text-align:center;
+    display: none;
+    text-align:center;
 }
 
 #mini_contact {
-	display: none;
-	background-color: #11b0ac;
-	width: 100%;
-	position: fixed;
-	text-align: center;
-	bottom: 0;
-	padding: 3px 0;
-	color: #ffffff;
-	font-size: 22px;
-	font-weight: bold;
-	font-family: 'Neuron';
+    display: none;
+    background-color: #11b0ac;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    padding: 3px 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Neuron';
 }
 
 #mini_menu ul {
-    float: left;  
-	list-style: none;  
-    font-size: 13px;  
-	margin: 0;  
-	padding: 0;  
-	font-weight: 400;
+    float: left;
+    list-style: none;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
 
 #mini_menu li {
-    float: left;  
-	
-    padding: 2px 0;  
-	border-left: solid 1px #d2d2d2;  
-	position: relative;  
+    float: left;
+
+    padding: 2px 0;
+    border-left: solid 1px #d2d2d2;
+    position: relative;
 }
 
 #mini_menu li:first-child {
-border-left: none;
+    border-left: none;
 }
 
 #mini_menu ul a {
@@ -778,11 +778,11 @@ border-left: none;
 }
 
 .menu-mini-menu-container {
-	display: inline-block;
+    display: inline-block;
 }
 
 #bg_proj_nav {
-	display: none;
+    display: none;
 }
 
 
@@ -790,213 +790,213 @@ border-left: none;
 
 
 @media all and (max-width:1200px) {
-	#header {
-		z-index: 5;
-		position: relative;
-		border-bottom: solid 3px #0db6b1;
-	}
-	
-	#header_content, #content, #inner_right {
-		width: 100% !important;
-	}
-	
-	#logo {
-		width: 195px;
-		padding: 7px 0 2px 0;
-		float: none;
-		margin: auto;
-	}
-	
-	#navigation , #slick_contact, #main_menu, #inner_left , .ball_pointer:after , .current_page_item:after, .current-menu-parent:after {
-		display: none;
-	}
-	
-	#mini_menu {
-		display: block;
-		margin-bottom: 3px;
-	}
-	
-	.current_page_item  a {
-		color: #08AFAD !important;
-	}
-	
-	#mini_contact {
-		display: block;
-		z-index: 9;
-	}	
-	
-	.mediumpadding {
-		padding-top: 25px;
-	}
+    #header {
+        z-index: 5;
+        position: relative;
+        border-bottom: solid 3px #0db6b1;
+    }
 
-	.contact-title {
-		font-size: 24px !important;
-	}
-	
-	#heartimg {
-		width: 18px;
-	}
+    #header_content, #content, #inner_right {
+        width: 100% !important;
+    }
 
-	#full_contact_form {
-		margin: 20px auto 10px auto;
-		width: 270px;
-	}	
+    #logo {
+        width: 195px;
+        padding: 7px 0 2px 0;
+        float: none;
+        margin: auto;
+    }
 
-	#full_contact_form input[type=text], #full_contact_form textarea {
-		-webkit-appearance: none;
-		-webkit-border-radius: 0px;
-		font-size: 15px;
-		padding: 7px 5px;
-		font-weight: bold;	
-	}
+    #navigation , #slick_contact, #main_menu, #inner_left , .ball_pointer:after , .current_page_item:after, .current-menu-parent:after {
+        display: none;
+    }
 
-	#full_contact_form input#submit {
-		-webkit-appearance: none;
-		-webkit-border-radius: 0px;
-		font-size: 15px;
-		font-weight: bold;
-		padding: 7px 0;	
-	}
-	
-	textarea#message {
-		height: 4em;
-	}
-	
-	#contact_email {
-		font-size: 21px;
-		letter-spacing: 0px;
-	} 	
-	
-	#projects_thumbs_container, #img_counter, img.arrow_proj	 {
-		display: none;
-	}
-	
-	/*.img_template.one_img.active 	 {
-		position: fixed;
-		top: -50%;
-		left: -50%;
-		width: 200%;
-		height: 200%;		
-	}
-	.one_img img {
-		position: absolute;
-		top: 50px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-		min-width: 50%;
-		min-height: 50%;
-		width: auto;
-	}*/
-	
-	.bg_proj, .bg {
-		z-index: 4 !important;
-		display: block;
-	}
-	
-	#project_slider {
-		display: none;
-	}
-	
-	#bg_proj_nav {
-		display: block;
-	}
-	
-	#bg_proj_nav img {
-		width: 30px;
-	}
-	
-	#bg_proj_left {
-		position: fixed;
-		top: 50%;
-		left: 5px;
-		z-index: 5;
-	}
-	
-	#bg_proj_right {
-		position: fixed;
-		top: 50%;
-		right: 5px;
-		z-index: 5;
-	}	
+    #mini_menu {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .current_page_item  a {
+        color: #08AFAD !important;
+    }
+
+    #mini_contact {
+        display: block;
+        z-index: 9;
+    }
+
+    .mediumpadding {
+        padding-top: 25px;
+    }
+
+    .contact-title {
+        font-size: 24px !important;
+    }
+
+    #heartimg {
+        width: 18px;
+    }
+
+    #full_contact_form {
+        margin: 20px auto 10px auto;
+        width: 270px;
+    }
+
+    #full_contact_form input[type=text], #full_contact_form textarea {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        font-size: 15px;
+        padding: 7px 5px;
+        font-weight: bold;
+    }
+
+    #full_contact_form input#submit {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 0;
+    }
+
+    textarea#message {
+        height: 4em;
+    }
+
+    #contact_email {
+        font-size: 21px;
+        letter-spacing: 0px;
+    }
+
+    #projects_thumbs_container, #img_counter, img.arrow_proj	 {
+        display: none;
+    }
+
+    /*.img_template.one_img.active 	 {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+    }
+    .one_img img {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+        width: auto;
+    }*/
+
+    .bg_proj, .bg {
+        z-index: 4 !important;
+        display: block;
+    }
+
+    #project_slider {
+        display: none;
+    }
+
+    #bg_proj_nav {
+        display: block;
+    }
+
+    #bg_proj_nav img {
+        width: 30px;
+    }
+
+    #bg_proj_left {
+        position: fixed;
+        top: 50%;
+        left: 5px;
+        z-index: 5;
+    }
+
+    #bg_proj_right {
+        position: fixed;
+        top: 50%;
+        right: 5px;
+        z-index: 5;
+    }
 }
 
 @media all and (min-width:500px) and (max-width:1200px) {
-	#logo {
-		width: 290px;
-	}
-	
-	#mini_menu ul {
-		font-size: 20px;
-	}
-	
-	.contact-title {
-		font-size: 35px !important;
-	}
-	
-	#full_contact_form {
-		width: 375px;
-	}
-	
-	#full_contact_form input[type=text], #full_contact_form textarea {
-		font-size: 18px;
-		padding: 9px 5px;
-	}
-	
-	#full_contact_form input#submit {
-		font-size: 17px;
-		padding: 8px 0;
-	}
-	
-	#contact_email {
-		font-size: 28px;		
-	}
-	
-	.msg-error {
-		font-size: 16px;
-	}
-	
-	#bg_proj_left {
-		left: 10px;
-	}
-	
-	#bg_proj_right {
-		right: 10px;
-	}
-	
-	#bg_proj_nav img {
-		width: 40px;
-	}
+    #logo {
+        width: 290px;
+    }
+
+    #mini_menu ul {
+        font-size: 20px;
+    }
+
+    .contact-title {
+        font-size: 35px !important;
+    }
+
+    #full_contact_form {
+        width: 375px;
+    }
+
+    #full_contact_form input[type=text], #full_contact_form textarea {
+        font-size: 18px;
+        padding: 9px 5px;
+    }
+
+    #full_contact_form input#submit {
+        font-size: 17px;
+        padding: 8px 0;
+    }
+
+    #contact_email {
+        font-size: 28px;
+    }
+
+    .msg-error {
+        font-size: 16px;
+    }
+
+    #bg_proj_left {
+        left: 10px;
+    }
+
+    #bg_proj_right {
+        right: 10px;
+    }
+
+    #bg_proj_nav img {
+        width: 40px;
+    }
 }
 
 @media all and (max-height:400px) {
-		#header {
-			border-bottom: solid 2px #0db6b1;
-		}
-		
-		#header_content {
-			float:left;
-		}
-		
-		#logo {
-			float: left;
-			width: 120px;
-			padding: 5px 5px 5px 10px;
-		}
-		
-		#mini_menu {
-			float: right;
-			padding: 11px 10px 0 5px;
-		}
-		
-		#mini_menu ul {
-			font-size: 15px !important;
-		}
-		
-		#bg_proj_left, #bg_proj_right {
-			margin-top: -20px;
-		}
+    #header {
+        border-bottom: solid 2px #0db6b1;
+    }
+
+    #header_content {
+        float:left;
+    }
+
+    #logo {
+        float: left;
+        width: 120px;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #mini_menu {
+        float: right;
+        padding: 11px 10px 0 5px;
+    }
+
+    #mini_menu ul {
+        font-size: 15px !important;
+    }
+
+    #bg_proj_left, #bg_proj_right {
+        margin-top: -20px;
+    }
 }
 
 /*
