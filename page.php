@@ -24,19 +24,17 @@ $(document).ready(function(){
 <div id="footer_container">
     <div id="navigation"></div>
     <div id="slick_contact">
-        <div id="slick_contact_title"><span style="font-weight:bold">TALK</span> to  <span style="font-weight:bold">US</span></div>
+        <div id="slick_contact_title"><span style="font-weight:bold">GET TIPS</span></div>
         <div id="sick_contact_content">
-            <div id="slick_contect_phone">03.9210606</div>
             <form id="slick_contact_form" method="post" action="" onsubmit="return false;">
                                 <input id="name" name="name" type="text" value="NAME" onfocus="this.value='';" onfocusout="if (this.value=='') this.value='NAME';">
                                 <div id="msg-error-name" class="msg-error" style="display: none;">Please enter your name</div>
-                                <input id="phone" name="phone" type="text" value="PHONE" onfocus="this.value='';" onfocusout="if (this.value=='') this.value='PHONE';">
                                 <input id="email" name="email" type="text" value="E-MAIL" onfocus="this.value='';" onfocusout="if (this.value=='') this.value='E-MAIL';">
                                 <div id="msg-error-email" class="msg-error" style="display: none;">Please enter valid email address</div>
-            <textarea id="message" name="message" rows="3" title="MESSAGE" onfocus="this.value='';" onfocusout="if (this.value=='') this.value='MESSAGE';">MESSAGE</textarea>
+                                <input id="message" name="message" value="NEWSLETTER" style="display: none;"></input>
                                 <input id="submit" type="submit" name="submit" value="SEND">
                             </form>  
-            <div id="success_mail">We got your message. Thank you!</div>
+            <div id="success_mail">You are subscribed now. Thank you!</div>
         </div>
     </div>
 </div>

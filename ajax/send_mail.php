@@ -6,6 +6,8 @@ require '../../../../../PHPMailer-master/PHPMailerAutoload.php';
     $phone = isset($_POST['phone']) ? $_POST['phone'] : "";
     $message = isset($_POST['message']) ? $_POST['message'] : "";
 
+    $newsletter = $message==="NEWSLETTER" ? true : false;
+
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
 // Set UTF-8
@@ -38,12 +40,13 @@ $mail->addAddress('amir@kadmon-brin.co.il', 'Amir');
 $mail->addAddress('marketing@kadmon-brin.co.il', 'Marketing');
 $mail->addAddress('pazaztael@gmail.com', 'Paz');
 //Set the subject line
-$mail->Subject = 'KadmonBrin Contact Form';
+$mail->Subject = !$newsletter ? 'KadmonBrin Contact Form' : 'KadmonBrin Newsletter';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML('<html><body><br/><b>From:</b> '.$name.'<br/> <b>Email:</b> '.$email.'<br/><b>Phone:</b> '.$phone.'<br/><b>Message:</b> '.$message.'</body></html>');
+$html = !$newsletter ? '<html><body><br/><b>From:</b> '.$name.'<br/> <b>Email:</b> '.$email.'<br/><b>Phone:</b> '.$phone.'<br/><b>Message:</b> '.$message.'</body></html>' : '<html><body><br/><b>From:</b> '.$name.'<br/> <b>Email:</b> '.$email.'</body></html>';
+$mail->msgHTML($html);
 //Replace the plain text body with one created manually
-$mail->Body = '<html><body><br/><b>From:</b> '.$name.'<br/> <b>Email:</b> '.$email.'<br/><b>Phone:</b> '.$phone.'<br/><b>Message:</b> '.$message.'</body></html>';
+$mail->Body = $html;
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
 
