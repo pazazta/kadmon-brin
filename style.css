@@ -504,6 +504,14 @@ div#testemonials_container {
     float: left;
 }
 
+img.reference_logo {
+    position: absolute;
+    bottom: 12px;
+    max-width: 100px;
+    max-height: 50px;
+    right: 10px;
+}
+
 .readmore {
     font-size: 18px;
     line-height: 22px;

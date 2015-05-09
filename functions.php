@@ -128,6 +128,7 @@ add_theme_support( 'post-thumbnails' );
 function add_reference( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'align' => 'left',
+        'logo'=> false,
 		'customer' => '',
 	), $atts ) );
         
@@ -136,7 +137,12 @@ function add_reference( $atts, $content = null ) {
         else   
            {$style = "rtl";}
 
-        $html = "<div class=\"testemonial {$style}\">\"{$content}\"<span style=\" position: absolute; bottom: 10px; left: 15px; \">{$customer}</span></div>";
+        if ($logo)
+            $logo_img = "<img src=\"{$logo}\" class=\"reference_logo\"/>";
+        else
+            $logo_img = "";
+
+        $html = "<div class=\"testemonial {$style}\">\"{$content}\"<span style=\" position: absolute; bottom: 10px; left: 15px; \">{$customer}</span>{$logo_img}</div>";
                         
         return $html;
 }
