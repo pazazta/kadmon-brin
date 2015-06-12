@@ -572,6 +572,11 @@ div.aligncenter {
     padding-left: 75px;
 }
 
+.mediump p {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 2px;
+}
 
 .bigp p {
     font-size: 30px;
@@ -583,6 +588,11 @@ div.aligncenter {
     width: 100%;
     display: inline-table;
     content: "";
+}
+
+.half {
+    width:50%;
+    float: left;
 }
 
 /** PORTFOLIO **/
@@ -728,6 +738,10 @@ div#img_counter {
 
 .active_proj {
     display:block;
+}
+
+.verticle-center {
+    padding-top: 35%;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
