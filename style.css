@@ -744,6 +744,10 @@ div#img_counter {
     padding-top: 35%;
 }
 
+#page_title a:hover {
+    color: #333333 !important;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .rtl {font-family:OpenSansHebrewIE !important;}
 }

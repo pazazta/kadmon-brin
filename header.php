@@ -10,7 +10,7 @@
         <meta name="description" content="קדמון ברין - מעצבי תערוכות מובילים. אנו מובילים את התחום בארץ ובעולם: עיצוב תערוכות, עיצוב ביתנים לתערוכות וביתנים מודולריים. צפו בגלריות שלנו."/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />	
 		<meta name="format-detection" content="telephone=no" />
-        <link href="<?=get_template_directory_uri()?>/style.css?v=1.9" rel="stylesheet" type="text/css" />
+        <link href="<?=get_template_directory_uri()?>/style.css?v=2.0" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" type="image/x-icon" href="<?=get_template_directory_uri()?>/images/kadmon-favicon.ico" />
         <script type="text/javascript" language="javascript" src="<?=get_template_directory_uri()?>/js/jquery-1.9.1.min.js" ></script> 
         <script type="text/javascript" language="javascript" src="<?=get_template_directory_uri()?>/js/jquery.mousewheel.min.js" ></script>
