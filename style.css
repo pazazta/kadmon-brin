@@ -532,6 +532,12 @@ img.reference_logo {
     font-family: OpenSansHebrew;
 }
 
+#inner_right.post.rtl {
+    width: 881px;
+    float: right;
+    padding-right: 22px;
+}
+
 .post_date {
     font-size: 15px;
 }
